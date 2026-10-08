@@ -1,0 +1,63 @@
+{
+  "name": "@metasearch/feed-validator",
+  "version": "0.1.0",
+  "description": "Hotel feed validation CLI and Node.js SDK for Google Hotel Center, Wego, trivago, Meta, Criteo and canonical hotel master data.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "bin": {
+    "metasearch": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metasearchcomtr/feed-validator.git"
+  },
+  "homepage": "https://metasearch.com.tr/en/tools/hotel-feed-validator",
+  "bugs": {
+    "url": "https://github.com/metasearchcomtr/feed-validator/issues"
+  },
+  "keywords": [
+    "hotel",
+    "feed",
+    "validator",
+    "metasearch",
+    "google-hotel-center",
+    "wego",
+    "trivago",
+    "cli"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist .test-dist",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test .test-dist/test/*.test.js",
+    "prepack": "npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
