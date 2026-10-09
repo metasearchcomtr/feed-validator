@@ -1,0 +1,3 @@
+hotel_id,name,address,city,postal_code,country,phone,latitude,longitude,accommodation_type,star_rating,url,image_url,description
+TR-IST-001,Example Bosphorus Hotel,Example Street 1,Istanbul,34000,TR,+902120000001,41.0380,28.9860,hotel,5,https://example.com/hotels/TR-IST-001,https://example.com/images/TR-IST-001.jpg,Synthetic example hotel for validator documentation
+TR-AYT-002,Example Antalya Resort,Example Avenue 2,Antalya,07000,TR,+902420000002,36.8969,30.7133,resort,4,https://example.com/hotels/TR-AYT-002,https://example.com/images/TR-AYT-002.jpg,Synthetic example resort for validator documentation
