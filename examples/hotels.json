@@ -1,0 +1,34 @@
+[
+  {
+    "hotel_id": "TR-IST-001",
+    "name": "Example Bosphorus Hotel",
+    "address": "Example Street 1",
+    "city": "Istanbul",
+    "postal_code": "34000",
+    "country": "TR",
+    "phone": "+902120000001",
+    "latitude": 41.038,
+    "longitude": 28.986,
+    "accommodation_type": "hotel",
+    "star_rating": 5,
+    "url": "https://example.com/hotels/TR-IST-001",
+    "image_url": "https://example.com/images/TR-IST-001.jpg",
+    "description": "Synthetic example hotel for validator documentation"
+  },
+  {
+    "hotel_id": "TR-AYT-002",
+    "name": "Example Antalya Resort",
+    "address": "Example Avenue 2",
+    "city": "Antalya",
+    "postal_code": "07000",
+    "country": "TR",
+    "phone": "+902420000002",
+    "latitude": 36.8969,
+    "longitude": 30.7133,
+    "accommodation_type": "resort",
+    "star_rating": 4,
+    "url": "https://example.com/hotels/TR-AYT-002",
+    "image_url": "https://example.com/images/TR-AYT-002.jpg",
+    "description": "Synthetic example resort for validator documentation"
+  }
+]

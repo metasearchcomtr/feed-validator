@@ -34,6 +34,15 @@ Requires Node.js 22+.
 npx @metasearch/feed-validator validate hotels.csv --target google-hotel-center
 ```
 
+### Try the repository sample
+
+```bash
+npx @metasearch/feed-validator validate examples/hotels.csv --target google-hotel-center
+npx @metasearch/feed-validator compare examples/hotels.csv --targets google-hotel-center,wego,trivago
+```
+
+The files under [`examples/`](examples/) are synthetic and safe to use in documentation, demos and CI examples.
+
 ### Validate a public URL
 
 ```bash
@@ -69,6 +78,8 @@ npx @metasearch/feed-validator validate hotels.csv \
   --target google-hotel-center \
   --fail-on error
 ```
+
+A complete GitHub Actions example is available in [`examples/README.md`](examples/README.md).
 
 Exit codes:
 
@@ -163,6 +174,7 @@ Registry identity: `tr.com.metasearch/metasearch-mcp`
 
 ## Documentation
 
+- [Example feeds and CI usage](examples/README.md)
 - [Hotel Feed Validator](https://metasearch.com.tr/en/tools/hotel-feed-validator)
 - [Hotel feed requirements comparison](https://metasearch.com.tr/en/compare/hotel-feed-requirements)
 - [Validate hotel feeds with MCP](https://metasearch.com.tr/en/resources/validate-hotel-feeds-with-mcp)
